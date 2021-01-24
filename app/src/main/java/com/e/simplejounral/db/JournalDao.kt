@@ -1,9 +1,10 @@
-package com.e.simplejounral.data
+package com.e.simplejounral.db
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.e.simplejounral.data.Journal
 import kotlinx.coroutines.flow.Flow
 
 @Dao

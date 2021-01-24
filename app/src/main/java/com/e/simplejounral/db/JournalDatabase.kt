@@ -5,7 +5,6 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.e.simplejounral.data.Journal
-import com.e.simplejounral.data.JournalDao
 
 @Database(entities = [Journal::class], version = 1, exportSchema = false)
 public abstract class JournalDatabase : RoomDatabase() {
