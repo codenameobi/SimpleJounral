@@ -28,8 +28,7 @@ class JournalAdapter(private var journals: List<Journal>) : ListAdapter<Journal,
     }
 
     override fun onBindViewHolder(holder: JournalViewHolder, position: Int) {
-        val currentJournal = journals[position]
-        holder.bind(currentJournal)
+        holder.bind(getItem(position))
     }
 
     class JournalsComparator : DiffUtil.ItemCallback<Journal>() {
