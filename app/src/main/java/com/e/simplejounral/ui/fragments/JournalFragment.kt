@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.e.simplejounral.R
+import com.e.simplejounral.data.Journal
+import com.e.simplejounral.ui.adapter.JournalAdapter
+import kotlinx.android.synthetic.main.fragment_journal.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,7 +26,12 @@ class JournalFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val adapter = JournalAdapter()
+        recyclerview.adapter = adapter
+        recyclerview.layoutManager = LinearLayoutManager(activity)
     }
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

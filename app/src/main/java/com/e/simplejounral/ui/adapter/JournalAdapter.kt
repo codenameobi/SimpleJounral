@@ -12,7 +12,7 @@ import com.e.simplejounral.utils.ctx
 import kotlinx.android.synthetic.main.item_journal.view.*
 
 
-class JournalAdapter(private var journals: List<Journal>) : ListAdapter<Journal, JournalAdapter.JournalViewHolder>(JournalsComparator()) {
+class JournalAdapter : ListAdapter<Journal, JournalAdapter.JournalViewHolder>(JournalsComparator()) {
     class JournalViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         fun bind(journal: Journal){
             itemView.title.text = journal.title
